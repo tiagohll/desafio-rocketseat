@@ -1,0 +1,101 @@
+:root {
+    --bg-url: url(./assets/bg-mobile.jpg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: var(--bg-url);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff
+}
+
+.container {
+    width: 360px;
+    margin: auto;
+    margin: 56px auto 0px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.profile img {
+    width: 112px;
+}
+
+.profile p {
+    font-weight: 500;
+    line-height: 24px;
+}
+
+ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 24px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+
+    -webkit-background-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: 500;
+    transition: background .5s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px 0;
+    font-size: 40px;
+}
+
+.social-link ion-icon {
+    transition: background .5s;
+}
+
+.social-link ion-icon:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+    
+}
